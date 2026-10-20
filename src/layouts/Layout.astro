@@ -1,19 +1,20 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>title</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import '../styles/global.css';
+import Nav from '../components/Nav.astro';
+import Footer from "../components/Footer.astro";
 
-<style>
-	html,
-	body {
-		
-	}
-</style>
+const { title = 'TorpTech' } = Astro.props;
+---
+<!doctype html>
+<html lang="nb">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>{title}</title>
+</head>
+<body>
+<Nav />
+<main><slot /></main>
+<Footer />
+</body>
+</html>
