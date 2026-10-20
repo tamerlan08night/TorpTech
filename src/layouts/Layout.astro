@@ -1,20 +1,27 @@
 ---
-import '../styles/global.css';
 import Nav from '../components/Nav.astro';
-import Footer from "../components/Footer.astro";
+import Footer from '../components/Footer.astro';
+import '../Styles/global.css';
 
-const { title = 'TorpTech' } = Astro.props;
+interface Props {
+	title?: string;
+}
+
+const { title = "TorpTech" } = Astro.props;
 ---
+
 <!doctype html>
-<html lang="nb">
+<html lang="no" class="scroll-smooth">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>{title}</title>
 </head>
-<body>
+<body class="bg-[#F5F7F8] text-[#1F2937] flex flex-col min-h-screen font-sans antialiased">
 <Nav />
-<main><slot /></main>
+<main class="flex-grow">
+	<slot />
+</main>
 <Footer />
 </body>
 </html>
