@@ -1,5 +1,175 @@
 ---
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
+// Компонент Footer для TorpTech
 ---
 
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Підзаголовок і головний заголовок -->
+        <span class="subtitle">SLIK SAMARBEIDER VI</span>
+        <h2 class="main-title">Fra forespørsel til ferdig løsning.</h2>
+
+        <!-- 4 кроки співпраці -->
+        <div class="steps-grid">
+            <div class="step-item">
+                <span class="step-number">01</span>
+                <h3 class="step-title">Behov</h3>
+                <p class="step-text">Vi lytter og kartlegger utfordringen.</p>
+            </div>
+
+            <div class="step-item">
+                <span class="step-number">02</span>
+                <h3 class="step-title">Avklaring</h3>
+                <p class="step-text">Vi avtaler omfang, ansvar og forventninger.</p>
+            </div>
+
+            <div class="step-item">
+                <span class="step-number">03</span>
+                <h3 class="step-title">Gjennomføring</h3>
+                <p class="step-text">Elevene utvikler, løser og dokumenterer.</p>
+            </div>
+
+            <div class="step-item">
+                <span class="step-number">04</span>
+                <h3 class="step-title">Leveranse</h3>
+                <p class="step-text">Vi tester, overleverer og følger opp.</p>
+            </div>
+        </div>
+
+        <!-- Нижня частина футера з інфою -->
+        <div class="footer-bottom">
+            <div class="brand-info">
+                <strong>TorpTech</strong>
+                <p>Reelle oppdrag. Praktisk læring. Felles nytte.</p>
+            </div>
+            <div class="meta-info">
+                <p>Elevdrevet IT-organisasjon · en del av skolens opplæring</p>
+                <p class="doc-type">Konseptdokument 2026</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<style>
+    /* Темний фон як на макеті */
+    .footer {
+        background-color: #0d1f2d;
+        color: #ffffff;
+        padding: 60px 40px 40px 40px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Зелений підзаголовок капсом */
+    .subtitle {
+        color: #00a884;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    /* Великий білий заголовок */
+    .main-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 50px;
+        color: #ffffff;
+    }
+
+    /* Сітка з 4 колонок із тонкими сірими смужками-розділювачами */
+    .steps-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin-bottom: 80px;
+    }
+
+    .step-item {
+        border-left: 1px solid rgba(255, 255, 255, 0.15);
+        padding-left: 20px;
+    }
+
+    .step-number {
+        color: #00a884;
+        font-size: 0.9rem;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .step-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin: 0 0 8px 0;
+        color: #ffffff;
+    }
+
+    .step-text {
+        color: #a0aec0;
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+    /* Нижня частина з копірайтом/інфою */
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-size: 0.8rem;
+        color: #a0aec0;
+    }
+
+    .brand-info strong {
+        color: #ffffff;
+        font-size: 1rem;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .brand-info p {
+        margin: 0;
+    }
+
+    .meta-info {
+        text-align: right;
+    }
+
+    .meta-info p {
+        margin: 0;
+    }
+
+    .doc-type {
+        margin-top: 4px !important;
+    }
+
+    /* Адаптивність під мобільні екрани */
+    @media (max-width: 768px) {
+        .steps-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .footer-bottom {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .meta-info {
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .steps-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
