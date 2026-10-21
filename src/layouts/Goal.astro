@@ -1,0 +1,194 @@
+
+---
+---
+
+<section class="goals">
+    <!-- Goals page header -->
+    <header class="goals-header">
+        <div class="container">
+            <p class="eyebrow">OM ORGANISASJONEN</p>
+            <h1>Våre tre hovedmål.</h1>
+            <p class="intro">
+                Retningen for arbeidet vårt. Her går faglig utvikling og nyttige
+                IT-leveranser hånd i hånd.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main goals list -->
+    <div class="container goals-content">
+        <div class="goal-card">
+            <span class="goal-number">01</span>
+            <div class="goal-text">
+                <h2>Brukerstøtte og opplæring</h2>
+                <p>
+                    Tilby fysisk og digital IT-brukerstøtte, kurs og veiledning
+                    som løser tekniske utfordringer og styrker digital kompetanse.
+                </p>
+            </div>
+        </div>
+
+        <div class="goal-card">
+            <span class="goal-number">02</span>
+            <div class="goal-text">
+                <h2>Systemutvikling</h2>
+                <p>
+                    Utvikle og vedlikeholde brukervennlige applikasjoner og digitale
+                    løsninger som dekker reelle behov hos interne og eksterne oppdragsgivere.
+                </p>
+            </div>
+        </div>
+
+        <div class="goal-card">
+            <span class="goal-number">03</span>
+            <div class="goal-text">
+                <h2>IT-drift og infrastruktur</h2>
+                <p>
+                    Etablere, drifte og vedlikeholde sikre og stabile nettverk,
+                    servere og IT-tjenester for interne og eksterne brukere.
+                </p>
+            </div>
+        </div>
+
+        <!-- Organization mission statement -->
+        <div class="mission">
+            <h3>Gjennom oppdrag som planlegges, gjennomføres og følges opp</h3>
+            <p>får elevene erfaring med samarbeid, faglig kvalitet og ansvar.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Main goals section */
+    .goals {
+        background-color: #f3f6fa;
+        color: #10283b;
+        min-height: 100vh;
+    }
+
+    /* Header with dark background */
+    .goals-header {
+        background-color: #10283b;
+        color: #ffffff;
+        padding: 30px 0;
+        border-top: 3px solid #00c4b0;
+    }
+
+    /* Center content and limit its width */
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 35px;
+        padding-right: 35px;
+        box-sizing: border-box;
+    }
+
+    /* Small heading above the main title */
+    .eyebrow {
+        color: #00c4b0;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin: 0 0 7px;
+    }
+
+    /* Main page title */
+    .goals-header h1 {
+        font-size: 36px;
+        line-height: 1.2;
+        margin: 0 0 7px;
+        font-weight: 750;
+    }
+
+    /* Short introduction under the title */
+    .intro {
+        color: #b9c8d4;
+        font-size: 13px;
+        line-height: 1.5;
+        max-width: 600px;
+        margin: 0;
+    }
+
+    /* Area containing the goal cards */
+    .goals-content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* Individual goal card */
+    .goal-card {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background-color: #ffffff;
+        border: 1px solid #e4eaf0;
+        border-radius: 7px;
+        padding: 14px;
+        margin-bottom: 10px;
+        min-height: 54px;
+    }
+
+    /* Number displayed beside each goal */
+    .goal-number {
+        color: #00bfa5;
+        font-size: 22px;
+        font-weight: 750;
+        flex-shrink: 0;
+    }
+
+    /* Text inside each goal card */
+    .goal-text h2 {
+        font-size: 15px;
+        font-weight: 750;
+        margin: 0 0 4px;
+    }
+
+    .goal-text p {
+        color: #617386;
+        font-size: 11px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    /* Highlighted mission statement */
+    .mission {
+        background-color: #eaf9f7;
+        border-radius: 6px;
+        margin-top: 28px;
+        padding: 15px;
+    }
+
+    .mission h3 {
+        font-size: 12px;
+        font-weight: 750;
+        margin: 0 0 4px;
+    }
+
+    .mission p {
+        color: #617386;
+        font-size: 11px;
+        margin: 0;
+    }
+
+    /* Adjust layout for mobile screens */
+    @media (max-width: 600px) {
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .goals-header h1 {
+            font-size: 29px;
+        }
+
+        .goal-card {
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .goal-number {
+            font-size: 20px;
+        }
+    }
+</style>
