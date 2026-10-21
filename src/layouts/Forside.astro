@@ -1,218 +1,292 @@
 ---
-// Page specific scripts or metadata if needed
+// Astro Component Frontmatter (importer layout eller andre komponenter her om du vil)
 ---
 
-<html lang="no">
-<head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TorpTech - Forside</title>
-</head>
-<body>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <!-- Small Text Above the Main Heading -->
+        <p class="eyebrow">TORPTECH / ELEVDREVET IT-ORGANISASJON</p>
 
-<main>
-    <!-- SERVICES SECTION -->
-    <section id="tjenester" class="services-section">
-        <div class="container">
-            <div class="section-header">
-                <p class="tag-dark">Dette kan vi bidra med</p>
-                <h2 class="section-title">Tre tjenester, ett mål.</h2>
+        <!-- Main Heading -->
+        <h1>
+            Reelle oppdrag. Praktisk læring.
+            <span>IT som skaper verdi.</span>
+        </h1>
+
+        <!-- Description Text -->
+        <p class="description">
+            En elevdrevet IT-organisasjon der elever skaper
+            løsninger og tjenester for mennesker med virkelige behov.
+        </p>
+
+        <!-- Call to Action Buttons -->
+        <div class="buttons">
+            <a href="#kontakt" class="btn-primary">Send forespørsel</a>
+            <a href="#tjenester" class="btn-secondary">Se tjenestene</a>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section ("Tre mål / Tre tjenester") -->
+<section class="services-section" id="tjenester">
+    <div class="services-container">
+        <!-- Section Header -->
+        <p class="section-eyebrow">DETTE KAN VI BIDRA MED</p>
+        <h2 class="section-title">Tre tjenester, ett mål.</h2>
+
+        <!-- Cards Grid -->
+        <div class="services-grid">
+            <!-- Card 1 -->
+            <div class="service-card">
+                <span class="card-eyebrow">TJENESTE / 01</span>
+                <h3>Brukerstøtte og opplæring</h3>
+                <p>Vi hjelper mennesker med teknologi i hverdagen.</p>
+                <a href="#les-mer-1" class="card-link">Les mer &rarr;</a>
             </div>
 
-            <!-- Service Cards Grid -->
-            <div class="cards-grid">
-                <!-- Card 1 -->
-                <div class="card">
-                    <div>
-                        <span class="card-number">Tjeneste / 01</span>
-                        <h3 class="card-heading">Brukerstøtte og opplæring</h3>
-                        <p class="card-text">Vi hjelper mennesker med teknologi i hverdagen.</p>
-                    </div>
-                    <a href="#" class="card-link">Les mer &rarr;</a>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="card">
-                    <div>
-                        <span class="card-number">Tjeneste / 02</span>
-                        <h3 class="card-heading">Systemutvikling</h3>
-                        <p class="card-text">Vi lager digitale løsninger som løser konkrete behov.</p>
-                    </div>
-                    <a href="#" class="card-link">Les mer &rarr;</a>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="card">
-                    <div>
-                        <span class="card-number">Tjeneste / 03</span>
-                        <h3 class="card-heading">IT-drift og infrastruktur</h3>
-                        <p class="card-text">Vi sørger for at tekniske løsninger kan fungere over tid.</p>
-                    </div>
-                    <a href="#" class="card-link">Les mer &rarr;</a>
-                </div>
+            <!-- Card 2 -->
+            <div class="service-card">
+                <span class="card-eyebrow">TJENESTE / 02</span>
+                <h3>Systemutvikling</h3>
+                <p>Vi lager digitale løsninger som løser konkrete behov.</p>
+                <a href="#les-mer-2" class="card-link">Les mer &rarr;</a>
             </div>
 
-            <!-- Bottom Callout Box -->
-            <div class="callout-box">
-                <div>
-                    <h4 class="callout-heading">Hvem er tilbudet for?</h4>
-                    <p class="callout-text">Elever og ansatte ved skolen, skoleprosjekter, organisasjoner og andre eksterne brukere og oppdragsgivere.</p>
-                </div>
-                <a href="#kontakt" class="btn-callout">Ta kontakt</a>
+            <!-- Card 3 -->
+            <div class="service-card">
+                <span class="card-eyebrow">TJENESTE / 03</span>
+                <h3>IT-drift og infrastruktur</h3>
+                <p>Vi sørger for at tekniske løsninger kan fungere over tid.</p>
+                <a href="#les-mer-3" class="card-link">Les mer &rarr;</a>
             </div>
         </div>
-    </section>
-</main>
 
-</body>
-</html>
+        <!-- Banner Box -->
+        <div class="target-banner">
+            <div class="banner-text">
+                <h3>Hvem er tilbudet for?</h3>
+                <p>Elever og ansatte ved skolen, skoleprosjekter, organisasjoner og andre eksterne brukere og oppdragsgivere.</p>
+            </div>
+            <a href="#kontakt" class="btn-banner">Ta kontakt</a>
+        </div>
+    </div>
+</section>
 
 <style>
-    /* General Reset & Layout */
+    /* ----------------------------------------- */
+    /* Global / Reset                             */
+    /* ----------------------------------------- */
     * {
         box-sizing: border-box;
-        margin: 0;
-        padding: 0;
     }
 
-    body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        background-color: #f8fafc;
-        color: #1e293b;
-        line-height: 1.5;
+    /* ----------------------------------------- */
+    /* Hero Section Styling                      */
+    /* ----------------------------------------- */
+    .hero {
+        background: #102638;
+        color: white;
+        padding: 64px 6.3%;
+        min-height: 310px;
+        display: flex;
+        align-items: center;
     }
 
-    .container {
-        max-width: 1150px;
+    .hero-content {
+        max-width: 900px;
         margin: 0 auto;
-        padding: 0 1.5rem;
+        width: 100%;
     }
 
-
-
-    /* Services Section */
-    .services-section {
-        padding: 5rem 0;
-        background-color: #f8fafc;
-    }
-
-    .section-header {
-        margin-bottom: 3rem;
-    }
-
-    .tag-dark {
-        color: #0d9488;
+    .eyebrow {
+        color: #00c4b0;
+        font-size: 11px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
         text-transform: uppercase;
-        font-size: 0.75rem;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-        margin-bottom: 0.5rem;
+        margin-bottom: 8px;
+    }
+
+    .hero h1 {
+        font-size: clamp(32px, 4vw, 40px);
+        line-height: 1.08;
+        margin: 12px 0;
+    }
+
+    .hero h1 span {
+        display: block;
+        color: #00c4b0;
+    }
+
+    .description {
+        color: #c0ccd6;
+        font-size: 14px;
+        line-height: 1.6;
+        max-width: 500px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .buttons a {
+        padding: 10px 16px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .btn-primary {
+        background: #078c83;
+        color: white;
+        transition: background-color 0.2s ease;
+    }
+
+    .btn-primary:hover {
+        background: #056b64;
+    }
+
+    .btn-secondary {
+        border: 1px solid #526779;
+        color: white;
+        transition: border-color 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+        border-color: #00c4b0;
+    }
+
+    /* ----------------------------------------- */
+    /* Services Section Styling                  */
+    /* ----------------------------------------- */
+    .services-section {
+        background-color: #f4f7f9;
+        padding: 64px 6.3%;
+        color: #102638;
+    }
+
+    .services-container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .section-eyebrow {
+        color: #00c4b0;
+        font-size: 11px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
     }
 
     .section-title {
-        font-size: 2.25rem;
-        font-weight: 800;
-        color: #0f1d2d;
+        font-size: 28px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 32px;
+        color: #102638;
     }
 
-    .cards-grid {
+    .services-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-        margin-bottom: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+        margin-bottom: 32px;
     }
 
-    .card {
+    .service-card {
         background: #ffffff;
-        border: 1px solid #e2e8f0;
-        padding: 2rem;
-        border-radius: 0.5rem;
+        padding: 24px 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
 
-    .card-number {
-        font-size: 0.75rem;
+    .card-eyebrow {
+        color: #7b8e9d;
+        font-size: 10px;
         font-weight: 700;
-        color: #94a3b8;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        display: block;
-        margin-bottom: 0.75rem;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
     }
 
-    .card-heading {
-        font-size: 1.25rem;
+    .service-card h3 {
+        font-size: 16px;
         font-weight: 700;
-        color: #0f1d2d;
-        margin-bottom: 0.75rem;
+        margin: 0 0 8px 0;
+        color: #102638;
     }
 
-    .card-text {
-        color: #64748b;
-        font-size: 0.95rem;
-        margin-bottom: 1.5rem;
+    .service-card p {
+        font-size: 13px;
+        color: #526779;
+        line-height: 1.5;
+        margin: 0 0 16px 0;
+        flex-grow: 1;
     }
 
     .card-link {
-        color: #0d9488;
+        color: #00c4b0;
+        font-size: 12px;
+        font-weight: 700;
         text-decoration: none;
-        font-weight: 600;
-        font-size: 0.9rem;
+        transition: color 0.2s ease;
     }
 
     .card-link:hover {
-        text-decoration: underline;
+        color: #078c83;
     }
 
-    /* Callout Box */
-    .callout-box {
-        background-color: #f0fdf4;
-        border: 1px solid #ccfbf1;
-        padding: 2rem;
-        border-radius: 0.75rem;
+    .target-banner {
+        background-color: #e6f7f5;
+        border-radius: 8px;
+        padding: 24px 28px;
         display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        align-items: flex-start;
         justify-content: space-between;
+        align-items: center;
+        gap: 20px;
     }
 
-    @media (min-width: 768px) {
-        .callout-box {
-            flex-direction: row;
-            align-items: center;
-        }
-    }
-
-    .callout-heading {
-        font-size: 1.1rem;
+    .banner-text h3 {
+        font-size: 15px;
         font-weight: 700;
-        color: #0f1d2d;
-        margin-bottom: 0.25rem;
+        margin: 0 0 6px 0;
+        color: #102638;
     }
 
-    .callout-text {
-        color: #475569;
-        font-size: 0.95rem;
+    .banner-text p {
+        font-size: 12px;
+        color: #526779;
+        margin: 0;
+        line-height: 1.5;
+        max-width: 550px;
     }
 
-    .btn-callout {
-        background-color: #0f766e;
-        color: white;
-        padding: 0.65rem 1.25rem;
-        border-radius: 0.375rem;
+    .btn-banner {
+        background-color: #078c83;
+        color: #ffffff;
+        padding: 10px 18px;
+        border-radius: 5px;
         text-decoration: none;
-        font-weight: 500;
-        font-size: 0.9rem;
+        font-size: 12px;
+        font-weight: bold;
         white-space: nowrap;
-        transition: background-color 0.2s;
+        transition: background-color 0.2s ease;
     }
 
-    .btn-callout:hover {
-        background-color: #115e59;
+    .btn-banner:hover {
+        background-color: #056b64;
+    }
+
+    @media (max-width: 650px) {
+        .target-banner {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 </style>
