@@ -1,5 +1,5 @@
 ---
-// Astro Component Frontmatter (importer layout eller andre komponenter her om du vil)
+// Astro Component Frontmatter
 ---
 
 <!-- Hero Section -->
@@ -42,7 +42,7 @@
                 <span class="card-eyebrow">TJENESTE / 01</span>
                 <h3>Brukerstøtte og opplæring</h3>
                 <p>Vi hjelper mennesker med teknologi i hverdagen.</p>
-                <a href="#les-mer-1" class="card-link">Les mer &rarr;</a>
+                <a href="/tjenester#brukerstotte" class="card-link">Les mer &rarr;</a>
             </div>
 
             <!-- Card 2 -->
@@ -50,7 +50,7 @@
                 <span class="card-eyebrow">TJENESTE / 02</span>
                 <h3>Systemutvikling</h3>
                 <p>Vi lager digitale løsninger som løser konkrete behov.</p>
-                <a href="#les-mer-2" class="card-link">Les mer &rarr;</a>
+                <a href="/tjenester#systemutvikling" class="card-link">Les mer &rarr;</a>
             </div>
 
             <!-- Card 3 -->
@@ -58,7 +58,7 @@
                 <span class="card-eyebrow">TJENESTE / 03</span>
                 <h3>IT-drift og infrastruktur</h3>
                 <p>Vi sørger for at tekniske løsninger kan fungere over tid.</p>
-                <a href="#les-mer-3" class="card-link">Les mer &rarr;</a>
+                <a href="/tjenester#it-drift" class="card-link">Les mer &rarr;</a>
             </div>
         </div>
 
@@ -79,6 +79,10 @@
     /* ----------------------------------------- */
     * {
         box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
     }
 
     /* ----------------------------------------- */

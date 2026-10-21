@@ -18,7 +18,7 @@
     <div class="services-container">
 
         <!-- Service Card 1 -->
-        <div class="service-card-detailed">
+        <div class="service-card-detailed" id="brukerstotte">
             <div class="service-left">
                 <span class="card-eyebrow">TJENESTE / 01</span>
                 <h3>Brukerstøtte og opplæring</h3>
@@ -35,7 +35,7 @@
         </div>
 
         <!-- Service Card 2 -->
-        <div class="service-card-detailed">
+        <div class="service-card-detailed" id="systemutvikling">
             <div class="service-left">
                 <span class="card-eyebrow">TJENESTE / 02</span>
                 <h3>Systemutvikling</h3>
@@ -52,7 +52,7 @@
         </div>
 
         <!-- Service Card 3 -->
-        <div class="service-card-detailed">
+        <div class="service-card-detailed" id="it-drift">
             <div class="service-left">
                 <span class="card-eyebrow">TJENESTE / 03</span>
                 <h3>IT-drift og infrastruktur</h3>
@@ -68,7 +68,7 @@
             </div>
         </div>
 
-        <!-- Call to Action Banner (Match bildet) -->
+        <!-- Call to Action Banner -->
         <div class="cta-banner-dotted" id="kontakt">
             <div class="cta-text">
                 <h3>Har du et behov?</h3>
@@ -81,6 +81,10 @@
 </section>
 
 <style>
+    html {
+        scroll-behavior: smooth;
+    }
+
     /* Hero Section */
     .services-hero {
         background: #102638;
@@ -197,9 +201,9 @@
         left: 0;
     }
 
-    /* Dotted CTA Banner (Oppdatert slik at det matcher bildet nøye) */
+    /* Dotted CTA Banner */
     .cta-banner-dotted {
-        background-color: #ebf8f6; /* Lys mintgrønn bakgrunnsfarge som på bildet */
+        background-color: #ebf8f6;
         border-radius: 4px;
         padding: 28px 36px;
         display: flex;
