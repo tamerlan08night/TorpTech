@@ -113,4 +113,32 @@
     .btn-cta:hover {
         background-color: #0b7068;
     }
+
+    /* Responsiveness for mobile screens (return the link in the second line) */
+    @media (max-width: 768px) {
+        .navbar {
+            flex-wrap: wrap; /* Allows elements to wrap to a new line */
+            gap: 0.6rem;
+            padding: 0.8rem 1rem;
+        }
+
+        .nav-links {
+            display: flex; /* Makes buttons visible */
+            width: 100%;   /* Take up the entire width of the row */
+            justify-content: space-around; /* Evenly distribute the width */
+            gap: 0.5rem;
+            order: 3;      /* Move them under the logo and button */
+            padding-top: 0.4rem;
+            border-top: 1px solid #f0f0f0; /* Thin dividing line at the top */
+        }
+
+        .nav-links a {
+            font-size: 0.75rem; /* Make the text a little smaller so that everything fits on the phone */
+        }
+
+        .btn-cta {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.8rem;
+        }
+    }
 </style>
