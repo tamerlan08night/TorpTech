@@ -6,6 +6,8 @@ import About from '../layouts/About.astro';
 import Goal from '../layouts/Goal.astro';
 import Forside from '../layouts/Forside.astro';
 import Service from '../layouts/Service.astro';
+import Hero from "../components/Hero.astro";
+
 
 ---
 
@@ -19,9 +21,15 @@ import Service from '../layouts/Service.astro';
 <body>
 
 <Nav />
+
+<!-- Green Divider -->
+    <div style="height: 5px; width: 100%; background-color: #00c4b0;"></div>
+
 <main>
-	<Forside />
+    <Hero />
+    <Forside />
 </main>
+
 
 <!-- Footer component import -->
 <Footer />
