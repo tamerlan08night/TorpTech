@@ -1,0 +1,45 @@
+---
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Service from "../layouts/Service.astro";
+
+// ELLER hvis den ligger i src/components/Service.astro:
+// import Service from "../components/Service.astro";
+---
+
+<html lang="no">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>TorpTech - Våre tjenester</title>
+</head>
+<body>
+<Nav />
+
+<!-- Green divider below navigation -->
+<div class="green-divider"></div>
+
+<main>
+    <Service />
+</main>
+
+<Footer />
+</body>
+</html>
+
+<style>
+    /* Green divider styling */
+    .green-divider {
+        height: 5px;
+        width: 100%;
+        background-color: #00c4b0;
+    }
+
+    /* Remove default browser spacing */
+    :global(body) {
+        margin: 0;
+        padding: 0;
+        background-color: #0d1f2d;
+        font-family: system-ui, sans-serif;
+    }
+</style>

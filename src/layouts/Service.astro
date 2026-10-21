@@ -1,0 +1,252 @@
+---
+// Dette er innholds-komponenten for tjenester
+---
+
+<!-- Hero Section for Våre tjenester -->
+<section class="services-hero">
+    <div class="hero-content">
+        <p class="eyebrow">TJENESTER OG MULIGHETER</p>
+        <h1>Våre tjenester.</h1>
+        <p class="description">
+            Fra personlig IT-hjelp til utvikling og drift av digitale løsninger. Vi tar utgangspunkt i faktiske behov og tilpasser oppdragene til rammene for hvert samarbeid.
+        </p>
+    </div>
+</section>
+
+<!-- Main Content Section -->
+<section class="services-content-section">
+    <div class="services-container">
+
+        <!-- Service Card 1 -->
+        <div class="service-card-detailed">
+            <div class="service-left">
+                <span class="card-eyebrow">TJENESTE / 01</span>
+                <h3>Brukerstøtte og opplæring</h3>
+                <p>Vi hjelper mennesker med teknologi i hverdagen.</p>
+            </div>
+            <div class="service-right">
+                <span class="examples-title">EKSEMPLER PÅ OPPRAG</span>
+                <ul>
+                    <li>Fysisk og digital feilsøking og brukerstøtte</li>
+                    <li>Hjelp med PC, programvare, utstyr og oppsett</li>
+                    <li>Kurs, veiledning og digital opplæring</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card-detailed">
+            <div class="service-left">
+                <span class="card-eyebrow">TJENESTE / 02</span>
+                <h3>Systemutvikling</h3>
+                <p>Vi lager digitale løsninger som løser konkrete behov.</p>
+            </div>
+            <div class="service-right">
+                <span class="examples-title">EKSEMPLER PÅ OPPRAG</span>
+                <ul>
+                    <li>Nettsider, webapplikasjoner og digitale tjenester</li>
+                    <li>Interne verktøy, arbeidsflyt og automatisering</li>
+                    <li>Videreutvikling og vedlikehold av applikasjoner</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card-detailed">
+            <div class="service-left">
+                <span class="card-eyebrow">TJENESTE / 03</span>
+                <h3>IT-drift og infrastruktur</h3>
+                <p>Vi sørger for at tekniske løsninger kan fungere over tid.</p>
+            </div>
+            <div class="service-right">
+                <span class="examples-title">EKSEMPLER PÅ OPPRAG</span>
+                <ul>
+                    <li>Oppsett og administrasjon av nettverk og servere</li>
+                    <li>Drift av nettsteder, applikasjoner og tjenester</li>
+                    <li>Overvåking, vedlikehold og sikkerhetskopiering</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Call to Action Banner (Match bildet) -->
+        <div class="cta-banner-dotted" id="kontakt">
+            <div class="cta-text">
+                <h3>Har du et behov?</h3>
+                <p>Fortell oss hva du trenger, så avklarer vi omfang og forventninger sammen.</p>
+            </div>
+            <a href="#foresprsel" class="btn-primary">Send forespørsel</a>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* Hero Section */
+    .services-hero {
+        background: #102638;
+        color: white;
+        padding: 64px 6.3%;
+        min-height: 260px;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-content {
+        max-width: 900px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .eyebrow {
+        color: #00c4b0;
+        font-size: 11px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        margin-bottom: 8px;
+    }
+
+    .services-hero h1 {
+        font-size: clamp(32px, 4vw, 40px);
+        line-height: 1.08;
+        margin-bottom: 12px;
+    }
+
+    .description {
+        color: #c0ccd6;
+        font-size: 14px;
+        line-height: 1.6;
+        max-width: 650px;
+    }
+
+    /* Main Content Section */
+    .services-content-section {
+        background-color: #f4f7f9;
+        padding: 64px 6.3%;
+        color: #102638;
+    }
+
+    .services-container {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Detailed Service Cards */
+    .service-card-detailed {
+        background: #ffffff;
+        padding: 32px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        align-items: start;
+    }
+
+    .card-eyebrow {
+        color: #7b8e9d;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .service-left h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #102638;
+    }
+
+    .service-left p {
+        font-size: 13px;
+        color: #526779;
+        line-height: 1.5;
+    }
+
+    .examples-title {
+        color: #078c83;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .service-right ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .service-right ul li {
+        font-size: 13px;
+        color: #526779;
+        margin-bottom: 6px;
+        position: relative;
+        padding-left: 14px;
+    }
+
+    .service-right ul li::before {
+        content: "•";
+        color: #00c4b0;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+    }
+
+    /* Dotted CTA Banner (Oppdatert slik at det matcher bildet nøye) */
+    .cta-banner-dotted {
+        background-color: #ebf8f6; /* Lys mintgrønn bakgrunnsfarge som på bildet */
+        border-radius: 4px;
+        padding: 28px 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-top: 10px;
+    }
+
+    .cta-text h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        color: #102638;
+    }
+
+    .cta-text p {
+        font-size: 13px;
+        color: #526779;
+        margin: 0;
+    }
+
+    .btn-primary {
+        background: #078c83;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 700;
+        white-space: nowrap;
+        transition: background 0.2s ease;
+    }
+
+    .btn-primary:hover {
+        background: #056b64;
+    }
+
+    @media (max-width: 768px) {
+        .service-card-detailed {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .cta-banner-dotted {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+</style>
